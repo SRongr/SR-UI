@@ -1,0 +1,60 @@
+
+@import '../../mixins/style/theme.less';
+.sr-button {
+  width: 70px;
+  height: 36px;
+  // background-color: $button-success-color;
+  background-color: green;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  box-sizing: border-box;
+  outline: 0;
+  margin: 0;
+  text-align: center;
+  padding: 0px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: 0.1s;
+  font-weight: 500;
+  color: white;
+  font-family: PingFangSC-Regular !important;
+  line-height: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .prefix-icon {
+    margin-right: 5px;
+  }
+  .text{
+    height:14px;
+    line-height:14px;
+  }
+  .suffix-icon {
+    margin-left: 5px;
+  }
+}
+
+.sr-button-type-default {
+  background-color: white;
+  border: @button-default-color 1px solid;
+  color: @text-color-black;
+}
+.sr-button-type-success {
+  background-color: @button-success-color;
+  border: @button-success-color 1px solid;
+  color: white;
+}
+.sr-button-type-successPlain {
+  background-color: white;
+  border: @button-success-color 1px solid;
+  color: @button-success-color;
+}
+.sr-button-isDisabled {
+  cursor: default;
+  opacity: 0.5;
+}
+.sr-button + .sr-button {
+  margin-left: 10px;
+}
